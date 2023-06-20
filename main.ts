@@ -1,6 +1,5 @@
 import { JSerStat } from 'npm:@jser/stat';
 import { serve } from "https://deno.land/std@0.140.0/http/server.ts";
-
 /**
  * 平均を求める
  * @param data

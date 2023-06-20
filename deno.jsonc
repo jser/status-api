@@ -2,5 +2,8 @@
   "tasks": {
     "dev": "deno run  --allow-net --allow-read --watch main.ts",
     "main": "deno run --allow-net --allow-read main.ts "
+  },
+  "imports": {
+    "npm:@jser/stat": "https://esm.sh/npm:@jser/stat@1.2.1"
   }
 }
