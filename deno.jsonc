@@ -4,6 +4,6 @@
     "main": "deno run --allow-net --allow-read main.ts "
   },
   "imports": {
-    "npm:@jser/stat": "https://esm.sh/@jser/stat@1.2.1"
+    "npm:@jser/stat": "https://esm.sh/@jser/stat@2.0.0"
   }
 }
