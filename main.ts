@@ -1,5 +1,6 @@
 import { JSerStat } from 'npm:@jser/stat';
 import { serve } from "https://deno.land/std@0.140.0/http/server.ts";
+
 /**
  * 平均を求める
  * @param data
@@ -56,23 +57,19 @@ async function getStat() {
         fetchURL("https://jser.info/posts.json"),
         fetchURL("https://jser.info/source-data/items.json")
     ]);
-    const jSerStat = new JSerStat(items, posts);
-    return jSerStat;
+    return new JSerStat(items, posts);
 }
 
-async function main() {
-    const stat = await getStat();
-    const data = calcData(stat);
-    console.log(data);
-}
-
-async function handler(req: Request): Promise<Response> {
+async function handler(_req: Request): Promise<Response> {
     const stat = await getStat();
     const data = calcData(stat);
     return new Response(JSON.stringify(data, null, 4), {
         status: 200,
         headers: {
             "content-type": "application/json",
+            // Allow CORS
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, OPTIONS",
         },
     });
 }
