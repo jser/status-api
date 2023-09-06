@@ -163,6 +163,8 @@
   "npm": {
     "specifiers": {
       "@jser/stat": "@jser/stat@1.2.1",
+      "@jser/stat@2": "@jser/stat@2.0.0",
+      "@jser/stat@2.0.0": "@jser/stat@2.0.0",
       "jser-stat": "jser-stat@4.0.3"
     },
     "packages": {
@@ -173,6 +175,12 @@
           "lodash.sortby": "lodash.sortby@4.7.0",
           "natural": "natural@5.2.4",
           "request": "request@2.88.2"
+        }
+      },
+      "@jser/stat@2.0.0": {
+        "integrity": "sha512-OMxvYHYs0rhtI06N5pInEmTAXPlI8Huxy2yViogmCYocLwlNtWHG89wE2exH1QNCP89332BwMWWK2NXTlmhD2g==",
+        "dependencies": {
+          "binarysearch": "binarysearch@1.0.1"
         }
       },
       "afinn-165@1.0.4": {
