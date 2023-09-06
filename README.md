@@ -19,6 +19,12 @@ $ curl https://jser-status.deno.dev/
 
 - https://jser.info/status-of-post/
 
+## Development
+
+```shell
+$ deno task dev
+```
+
 ## LICENSE
 
 MIT
